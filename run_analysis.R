@@ -200,7 +200,14 @@ head(dat)
 ## write .csv file to disk
 ## ============================================================================
 
-write.csv(dat, "uci-har-dataset-clean.csv")
+## [[note]]
+## this would be the "first" data set, that is implied (but not really mentioned)
+## in the instructions. After some thinking about it, I decided that the result
+## of this script should only be one data file, which then would be the "second"
+## data set containing only the means. This is written below, so this step is 
+## commented out...
+
+## write.csv(dat, "uci-har-dataset-clean.csv")
 
 ## ============================================================================
 ## create a second, independent dataset with means per activity and subject
@@ -229,7 +236,7 @@ dat.mean <- aggregate(dat[-(1:3)], list("subject"=dat$subject, "sample"=dat$samp
 ## names(dat.mean)[-(1:3)] <- names(dat)[-(1:3)]
 
 ## ============================================================================
-## write second .csv file to disk
+## write "second" .csv file to disk
 ## ============================================================================
 
 write.csv(dat.mean, "uci-har-dataset-clean-mean.csv")
@@ -240,7 +247,7 @@ write.csv(dat.mean, "uci-har-dataset-clean-mean.csv")
 
 ## NOT RUN:
 
-#cat(paste0("**", names(dat), "** -- "), "\n", sep="\n\n")
+#cat(paste0("**", names(dat), "** -- of time series for each time the activity was performed), mean value over all activities by subject and activity type"), "\n", sep="\n\n")
 #cat(paste0("* ", names(dat), ""), "\n", sep="\n")
 #cat(paste0("* ", levels(dat$activity)), "\n", sep="\n" )
 

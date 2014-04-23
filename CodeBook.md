@@ -1,9 +1,9 @@
-Codebook for uci-har-dataset-clean.csv and uci-har-dataset-clean-mean.csv
+Codebook for uci-har-dataset-clean-mean.csv
 ===
 
-This file contains the description of variables in the files `uci-har-dataset-clean.csv` and `uci-har-dataset-clean-mean.csv`.
+This file contains the description of variables in the file `uci-har-dataset-clean-mean.csv`.
 
-Description of variables in both files
+Description of variables
 ---
 
 **subject** -- Number (1-30) of subject that performed the activity.
@@ -19,97 +19,99 @@ Description of variables in both files
 * STANDING
 * LAYING
 
-***Further variables:***
 
-All of the following variables are included in both files. However, in the file `uci-har-dataset-clean.csv` they contain the originally calculated metrics (multiple activities of each type by each subject), which are described below in section *Description of original variables*.
+**tbodyacc.mean.x**, **tbodyacc.mean.y**, **tbodyacc.mean.z**  -- Body acceleration signal in X, Y, and Z directions (mean of time series for each time the activity was performed), mean value over all activities by subject and activity type
 
-In the file `uci-har-dataset-clean-mean.csv` they contain the mean of each of these original measurements by subject and by activity (only 1 mean value per activity and subject).
+**tbodyacc.std.x**, **tbodyacc.std.y**, **tbodyacc.std.z**  -- Body acceleration signal in X, Y, and Z directions (standard deviation of time series for each time the activity was performed), mean value over all activities by subject and activity type
 
-* tbodyacc.mean.x
-* tbodyacc.mean.y
-* tbodyacc.mean.z
-* tbodyacc.std.x
-* tbodyacc.std.y
-* tbodyacc.std.z
-* tgravityacc.mean.x
-* tgravityacc.mean.y
-* tgravityacc.mean.z
-* tgravityacc.std.x
-* tgravityacc.std.y
-* tgravityacc.std.z
-* tbodyaccjerk.mean.x
-* tbodyaccjerk.mean.y
-* tbodyaccjerk.mean.z
-* tbodyaccjerk.std.x
-* tbodyaccjerk.std.y
-* tbodyaccjerk.std.z
-* tbodygyro.mean.x
-* tbodygyro.mean.y
-* tbodygyro.mean.z
-* tbodygyro.std.x
-* tbodygyro.std.y
-* tbodygyro.std.z
-* tbodygyrojerk.mean.x
-* tbodygyrojerk.mean.y
-* tbodygyrojerk.mean.z
-* tbodygyrojerk.std.x
-* tbodygyrojerk.std.y
-* tbodygyrojerk.std.z
-* tbodyaccmag.mean
-* tbodyaccmag.std
-* tgravityaccmag.mean
-* tgravityaccmag.std
-* tbodyaccjerkmag.mean
-* tbodyaccjerkmag.std
-* tbodygyromag.mean
-* tbodygyromag.std
-* tbodygyrojerkmag.mean
-* tbodygyrojerkmag.std
-* fbodyacc.mean.x
-* fbodyacc.mean.y
-* fbodyacc.mean.z
-* fbodyacc.std.x
-* fbodyacc.std.y
-* fbodyacc.std.z
-* fbodyacc.meanfreq.x
-* fbodyacc.meanfreq.y
-* fbodyacc.meanfreq.z
-* fbodyaccjerk.mean.x
-* fbodyaccjerk.mean.y
-* fbodyaccjerk.mean.z
-* fbodyaccjerk.std.x
-* fbodyaccjerk.std.y
-* fbodyaccjerk.std.z
-* fbodyaccjerk.meanfreq.x
-* fbodyaccjerk.meanfreq.y
-* fbodyaccjerk.meanfreq.z
-* fbodygyro.mean.x
-* fbodygyro.mean.y
-* fbodygyro.mean.z
-* fbodygyro.std.x
-* fbodygyro.std.y
-* fbodygyro.std.z
-* fbodygyro.meanfreq.x
-* fbodygyro.meanfreq.y
-* fbodygyro.meanfreq.z
-* fbodyaccmag.mean
-* fbodyaccmag.std
-* fbodyaccmag.meanfreq
-* fbodybodyaccjerkmag.mean
-* fbodybodyaccjerkmag.std
-* fbodybodyaccjerkmag.meanfreq
-* fbodybodygyromag.mean
-* fbodybodygyromag.std
-* fbodybodygyromag.meanfreq
-* fbodybodygyrojerkmag.mean
-* fbodybodygyrojerkmag.std
-* fbodybodygyrojerkmag.meanfreq
+**tgravityacc.mean.x**, **tgravityacc.mean.y**, **tgravityacc.mean.z** -- Gravity acceleration signal in X, Y, and Z directions (mean of time series for each time the activity was performed), mean value over all activities by subject and activity type
+
+**tgravityacc.std.x**, **tgravityacc.std.y**, **tgravityacc.std.z** -- Gravity acceleration signal in X, Y, and Z directions (standard deviation of time series for each time the activity was performed), mean value over all activities by subject and activity type
+
+**tbodyaccjerk.mean.x**, **tbodyaccjerk.mean.y**, **tbodyaccjerk.mean.z** -- Body jerk signal (derivation of body linear acceleration) in X, Y, and Z directions (mean of of time series for each time the activity was performed), mean value over all activities by subject and activity type
+
+**tbodyaccjerk.std.x**, **tbodyaccjerk.std.y**, **tbodyaccjerk.std.z** -- Body jerk signal (derivation of body linear acceleration) in X, Y, and Z directions (standard deviation of of time series for each time the activity was performed), mean value over all activities by subject and activity type
+
+**tbodygyro.mean.x**, **tbodygyro.mean.y**, **tbodygyro.mean.z** -- Angular body acceleration in X, Y, and Z directions (mean of of time series for each time the activity was performed), mean value over all activities by subject and activity type
+
+**tbodygyro.std.x**, **tbodygyro.std.y**, **tbodygyro.std.z** -- Angular body acceleration in X, Y, and Z directions (standard deviation of of time series for each time the activity was performed), mean value over all activities by subject and activity type
+
+
+**tbodygyrojerk.mean.x**, **tbodygyrov.mean.y**, **tbodygyrojerk.mean.z** -- Angular body jerk signal (derivation of body angular velocity) in X, Y, and Z directions (mean of of time series for each time the activity was performed), mean value over all activities by subject and activity type
+
+**tbodygyrojerk.std.x**, **tbodygyrojerk.std.y**, **tbodygyrojerk.std.z** -- Angular body jerk signal (derivation of body angular velocity) in X, Y, and Z directions (standard deviation of of time series for each time the activity was performed), mean value over all activities by subject and activity type
+
+**tbodyaccmag.mean** -- magnitude of three-dimensional signal of body acceleration, calculated using the Euclidean norm (mean of time series for each time the activity was performed), mean value over all activities by subject and activity type
+
+**tbodyaccmag.std** -- magnitude of three-dimensional signal of body acceleration, calculated using the Euclidean norm (standard deviation of time series for each time the activity was performed), mean value over all activities by subject and activity type
+
+**tgravityaccmag.mean** -- magnitude of three-dimensional signal of gravity acceleration, calculated using the Euclidean norm (mean of time series for each time the activity was performed), mean value over all activities by subject and activity type
+
+**tgravityaccmag.std** -- magnitude of three-dimensional signal of gravity acceleration, calculated using the Euclidean norm (standard deviation of time series for each time the activity was performed), mean value over all activities by subject and activity type
+
+**tbodyaccjerkmag.mean** -- magnitude of three-dimensional signal of body acceleration jerk, calculated using the Euclidean norm (mean of time series for each time the activity was performed), mean value over all activities by subject and activity type
+
+**tbodyaccjerkmag.std** -- magnitude of three-dimensional signal of body acceleration jerk, calculated using the Euclidean norm (standard deviation of time series for each time the activity was performed), mean value over all activities by subject and activity type
+
+
+**tbodygyromag.mean** -- magnitude of three-dimensional signal of angular body acceleration, calculated using the Euclidean norm (mean of time series for each time the activity was performed), mean value over all activities by subject and activity type
+
+**tbodygyromag.std** -- magnitude of three-dimensional signal of angular body acceleration, calculated using the Euclidean norm (standard deviation of time series for each time the activity was performed), mean value over all activities by subject and activity type
+
+
+**tbodygyrojerkmag.mean** -- magnitude of three-dimensional signal of angular body acceleration jerk signal, calculated using the Euclidean norm (mean of time series for each time the activity was performed), mean value over all activities by subject and activity type
+
+**tbodygyrojerkmag.std** -- magnitude of three-dimensional signal of angular body acceleration jerk signal, calculated using the Euclidean norm (standard deviation of time series for each time the activity was performed), mean value over all activities by subject and activity type
+
+
+**fbodyacc.mean.x**, **fbodyacc.mean.y**, **fbodyacc.mean.z** -- Fast Fourier Transform (FFT) of tbodyacc.mean.x, tbodyacc.mean.y, tbodyacc.mean.z (mean/standard deviation of time series for each time the activity was performed), mean value over all activities by subject and activity type
+
+**fbodyacc.std.x**, **fbodyacc.std.y**, **fbodyacc.std.z** -- Fast Fourier Transform (FFT) of tbodyacc.std.x, tbodyacc.std.y, tbodyacc.std.z (standard deviation of time series for each time the activity was performed), mean value over all activities by subject and activity type
+
+
+**fbodyacc.meanfreq.x**, **fbodyacc.meanfreq.y**, **fbodyacc.meanfreq.z** -- Fast Fourier Transform (FFT) of fbodyacc.mean.x, fbodyacc.mean.y, fbodyacc.mean.z (weighted average of the frequency components of the time series for each time the activity was performed), mean value over all activities by subject and activity type
+
+**fbodyaccjerk.mean.x**, **fbodyaccjerk.mean.y**, **fbodyaccjerk.mean.z** -- Fast Fourier Transform (FFT) of tbodyaccjerk.mean.x, tbodyaccjerk.mean.y, tbodyaccjerk.mean.z (mean of time series for each time the activity was performed), mean value over all activities by subject and activity type
+
+**fbodyaccjerk.std.x**, **fbodyaccjerk.std.y**, **fbodyaccjerk.std.z** -- Fast Fourier Transform (FFT) of tbodyaccjerk.std.x, tbodyaccjerk.std.y, tbodyaccjerk.std.z (standard deviation of time series for each time the activity was performed), mean value over all activities by subject and activity type
+
+**fbodyaccjerk.meanfreq.x**, **fbodyaccjerk.meanfreq.y**, **fbodyaccjerk.meanfreq.z** -- Fast Fourier Transform (FFT) of tbodyaccjerk.mean.x, tbodyaccjerk.mean.y, tbodyaccjerk.mean.z (weighted average of the frequency components of the time series for each time the activity was performed), mean value over all activities by subject and activity type
+
+**fbodygyro.mean.x**, **fbodygyro.mean.y**, **fbodygyro.mean.z** -- Fast Fourier Transform (FFT) of tbodygyro.mean.x, tbodygyro.mean.y, tbodygyro.mean.z (mean of time series for each time the activity was performed), mean value over all activities by subject and activity type
+
+**fbodygyro.std.x**, **fbodygyro.std.y**, **fbodygyro.std.z** -- Fast Fourier Transform (FFT) of tbodygyro.std.x, tbodygyro.std.y, tbodygyro.std.z (standard deviation of time series for each time the activity was performed), mean value over all activities by subject and activity type
+
+**fbodygyro.meanfreq.x**, **fbodygyro.meanfreq.y**, **fbodygyro.meanfreq.z** -- Fast Fourier Transform (FFT) of tbodygyrojerk.mean.x, tbodygyrojerk.mean.y, tbodygyrojerk.mean.z (weighted average of the frequency components of the time series for each time the activity was performed), mean value over all activities by subject and activity type
+
+**fbodyaccmag.mean** -- Fast Fourier Transform (FFT) of tbodyaccmag.mean (mean of time series for each time the activity was performed), mean value over all activities by subject and activity type
+
+**fbodyaccmag.std** -- Fast Fourier Transform (FFT) of tbodyaccmag.std (standard deviation of time series for each time the activity was performed), mean value over all activities by subject and activity type
+
+**fbodyaccmag.meanfreq** -- Fast Fourier Transform (FFT) of tbodyaccmag.meanfreq (weighted average of frequency components of time series for each time the activity was performed), mean value over all activities by subject and activity type
+
+**fbodybodyaccjerkmag.mean** -- Fast Fourier Transform (FFT) of tbodybodyaccjerkmag.mean (mean of time series for each time the activity was performed), mean value over all activities by subject and activity type
+
+**fbodybodyaccjerkmag.std** -- Fast Fourier Transform (FFT) of tbodybodyaccjerkmag.std (standard deviation of time series for each time the activity was performed), mean value over all activities by subject and activity type
+
+**fbodybodyaccjerkmag.meanfreq** -- Fast Fourier Transform (FFT) of tbodybodyaccjerkmag.meanfreq (weighted average of frequency components of time series for each time the activity was performed), mean value over all activities by subject and activity type
+
+**fbodybodygyromag.mean** -- Fast Fourier Transform (FFT) of tbodybodygyromag.mean (mean of time series for each time the activity was performed), mean value over all activities by subject and activity type
+
+**fbodybodygyromag.std** -- Fast Fourier Transform (FFT) of tbodybodygyromag.std (standard deviation of time series for each time the activity was performed), mean value over all activities by subject and activity type
+
+**fbodybodygyromag.meanfreq** -- Fast Fourier Transform (FFT) of tbodybodygyromag.meanfreq (weighted average of frequency components of time series for each time the activity was performed), mean value over all activities by subject and activity type
+
+**fbodybodygyrojerkmag.mean** -- Fast Fourier Transform (FFT) of tbodybodygyrojerkmag.mean (mean of time series for each time the activity was performed), mean value over all activities by subject and activity type
+
+**fbodybodygyrojerkmag.std** -- Fast Fourier Transform (FFT) of tbodybodygyrojerkmag.std (standard deviation of time series for each time the activity was performed), mean value over all activities by subject and activity type
+
+**fbodybodygyrojerkmag.meanfreq** -- Fast Fourier Transform (FFT) of tbodybodygyrojerkmag.meanfreq (weighted average of frequency components of time series for each time the activity was performed), mean value over all activities by subject and activity type
 
 
 Description of original variables
 -----
 
-The rest of the .csv file contains a selection of feature variables that were part of the original data set, hence their description is posted here (in parts). The original dataset is available at [https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip), and the project homepage is [http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones).
+The rest of the .csv file contains parts of the description of the variables that the current data set originated from. The original dataset is available at [https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip), and the project homepage is [http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones).
 
 The rest of this file was authored by (copied from): 
 
